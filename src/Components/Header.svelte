@@ -1,10 +1,6 @@
-<header class="d-flex top-header">
-  <div class="h-100 w-100">
-    <div class="container w-100" />
-    <div class="sub-header w-100" />
-  </div>
-
-</header>
+<script>
+  import Logo from "./Header/Logo.svelte";
+</script>
 
 <style>
   article,
@@ -46,14 +42,19 @@
   .sub-header {
     height: 312px;
   }
+  .logo{
+    margin: 15px;
+  }
 </style>
 
 <header class="d-flex top-header">
   <div class="h-100 w-100">
     <div class="container w-100">
       <div class="logo">
+        <Logo />
       </div>
     </div>
     <div class="sub-header w-100" />
+
   </div>
 </header>

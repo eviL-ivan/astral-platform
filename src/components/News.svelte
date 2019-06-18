@@ -5,4 +5,4 @@
   }
 </style>
 
-<div class="container w-100" />
+<div class="container w-100" >news</div>

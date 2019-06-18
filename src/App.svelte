@@ -1,21 +1,22 @@
 <script>
-  import Header from "./Components/Header.svelte";
-  import Main from "./Components/Main.svelte";
-  import News from "./Components/News.svelte";
-  import Footer from "./Components/Footer.svelte";
+  import Header from "components/Header.svelte";
+  import Main from "components/Main.svelte";
+  import News from "components/News.svelte";
+  import Footer from "components/Footer.svelte";
+  import { Router, Link, Route } from "svelte-routing";
+
+  export let url = "";
 </script>
 
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    font-family: "Roboto", sans-serif;
-    overflow-x: hidden;
-  }
-</style>
-
-<Header />
-<Main />
-<News />
-<Footer />
+<Router {url}>
+  <Header />
+  <div>
+    <Route path="about" component={News} />
+    <Route path="contact" component={News} />
+    <Route path="news" component={News} />
+    <Route path="/">
+      <Main />
+    </Route>
+  </div>
+  <Footer />
+</Router>

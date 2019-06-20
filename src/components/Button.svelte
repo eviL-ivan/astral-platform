@@ -18,23 +18,18 @@
     user-select: none;
     border-radius: 0;
     vertical-align: middle;
-    -moz-appearance: none;
     justify-content: center;
     text-decoration: none;
     background-color: transparent;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
   }
   .button-root {
     color: rgba(0, 0, 0, 0.87);
-    padding: 6px 16px;
     font-size: 0.875rem;
     min-width: 64px;
     box-sizing: border-box;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.75;
     border-radius: 4px;
@@ -54,6 +49,8 @@
     display: inherit;
     align-items: inherit;
     justify-content: inherit;
+    font-size: 15px;
+    padding: 14px 30px;
   }
   .contained {
     background-color: #0056D6;
@@ -61,6 +58,8 @@
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
     border-radius: 90px;
+    margin-top: 50px;
+    margin-bottom: 24px;
   }
   .contained:hover {
     background-color: #0989E3;

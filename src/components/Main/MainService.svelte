@@ -67,11 +67,11 @@
   .wrapper-cards {
     display: flex;
     justify-content: space-around;
-    margin: 24px 112px;
+    margin: 24px 0;
     flex-wrap: wrap;
   }
   .container-service {
-    margin: 40px 0;
+    padding: 40px 0;
   }
   .button-container {
     display: flex;
@@ -85,7 +85,7 @@
   }
 </style>
 
-<div class="container-service">
+<div class="container-service max-width">
   <div class="wrapper-cards">
     {#each mainService as { ...data }, i}
       <ServiceCard {...data} />

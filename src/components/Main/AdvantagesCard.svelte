@@ -9,8 +9,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 36px 50px;
-    width: calc((100% - 70px) / 3);
+    margin: 36px 0;
+    width: calc((100% - 70px) / 2);
   }
   .service-icon {
     width: 131px;

@@ -5,11 +5,6 @@
   import Integration from "./Main/Integration.svelte";
 </script>
 
-<style>
-  .container {
-  }
-</style>
-
 <main>
   <div class="container w-100">
     <MainService />

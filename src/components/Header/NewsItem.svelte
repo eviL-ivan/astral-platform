@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     border-left: 3px solid #4e8be6;
     color: #fff;
-    margin: 35px;
+    margin: 35px 0 35px 35px;
     max-width: 300px;
     padding: 5px 10px;
   }

@@ -3,13 +3,22 @@
 </script>
 
 <style>
-  .service-card-wrapper {
-    margin: 36px 50px;
+  .panther-card-wrapper {
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+  .panther-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  :global(.panther-icon > svg) {
+    height: 80px;
   }
 </style>
 
-<div class="service-card-wrapper">
-  <div class="service-icon">
+<div class="panther-card-wrapper">
+  <div class="panther-icon">
     <Icon />
   </div>
 </div>

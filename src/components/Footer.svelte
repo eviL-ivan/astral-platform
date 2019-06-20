@@ -7,6 +7,8 @@
 <style>
   .container {
     background-color: #274369;
+    position: absolute;
+    bottom: 0;
   }
   .footer-container {
     display: flex;

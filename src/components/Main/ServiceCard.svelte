@@ -1,4 +1,5 @@
 <script>
+  import { Link } from "svelte-routing";
   export let text;
   export let Icon;
 </script>
@@ -7,7 +8,7 @@
   .service-card-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     cursor: pointer;
     width: calc((100% - 20px) / 5);
@@ -24,12 +25,15 @@
   }
   .service-text {
     font-size: 14px;
+    text-align: center;
   }
 </style>
 
-<div class="service-card-wrapper">
-  <div class="service-icon">
-    <Icon />
+<Link to="content">
+  <div class="service-card-wrapper">
+    <div class="service-icon">
+      <Icon />
+    </div>
+    <div class="service-text">{text}</div>
   </div>
-  <div class="service-text">{text}</div>
-</div>
+</Link>

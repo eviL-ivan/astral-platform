@@ -1,13 +1,14 @@
 <script>
-  import Integration from "./Main/Integration.svelte";
-  import List from "./List/List.svelte";
-  import ServiceButton from "./ServiceButton.svelte";
-  import Popover from "./Popover.svelte";
-  import DotsIcon from "../../static/DotsIcon.svelte";
-  import ServiceInfoIcon1 from "../../static/ServiceInfo/ServiceInfoIcon1.svelte";
-  import Divider from "./Divider.svelte";
-  import Tabs from "./Tabs.svelte";
-  import TabContainer from "./TabContainer.svelte";
+  import Integration from "components/Main/Integration/Integration.svelte";
+  import List from "components/Common/List/List.svelte";
+  import ServiceButton from "components/Common/Buttons/ServiceButton.svelte";
+  import Popover from "components/Common/Popover.svelte";
+  import Divider from "components/Common/Divider.svelte";
+  import Tabs from "components/Common/Tabs/Tabs.svelte";
+  import TabContainer from "components/Common/Tabs/TabContainer.svelte";
+
+  import DotsIcon from "static/DotsIcon.svelte";
+  import ServiceInfoIcon1 from "static/ServiceInfo/ServiceInfoIcon1.svelte";
 </script>
 
 <style>
@@ -72,7 +73,9 @@
               </div>
             </ServiceButton>
           </div>
-          <div slot="content"><List /></div>
+          <div slot="content">
+            <List />
+          </div>
         </Popover>
       </div>
     </div>

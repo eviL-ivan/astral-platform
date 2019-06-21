@@ -10,7 +10,7 @@
     flex-shrink: 0;
     background-color: rgba(0, 0, 0, 0.12);
   }
-  .white {
+  .white-divider {
     background-color: #fff;
     opacity: 0.1;
   }

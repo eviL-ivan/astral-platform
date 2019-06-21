@@ -1,22 +1,32 @@
 <script>
-  import { Router, Link, Route } from "svelte-routing";
-  import NewItem from "./Header/NewsItem.svelte";
-  import LogoColored from "../../static/LogoColored.svelte";
-  import AstralPlatform from "../../static/AstralPlatform.svelte";
-  import LoginWhiteHeader from "../../static/LoginWhiteHeader.svelte";
+  import { Link } from "svelte-routing";
+  import NewItem from "components/Header/NewsItem.svelte";
+
+  import Logo from "static/Logo.svelte";
+  import AstralPlatform from "static/AstralPlatform.svelte";
+  import Login from "static/Login.svelte";
+
   export let getProps;
+  export let news;
 </script>
 
 <style>
-  header {
-    position: relative;
-    margin-bottom: 50px;
-    background: #0056d6 url("/BackgroundHeader.svg") center repeat;
-  }
-  .container-white {
+  .container {
     height: 98px;
-    background-color: white;
-    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .header-container {
+    max-width: 1280px;
+    margin: auto;
+  }
+  .sub-header {
+    padding-top: 98px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
   }
   .sub-header > div {
     margin-bottom: 40px;
@@ -44,7 +54,7 @@
   }
   nav > :global(a) {
     text-decoration: none;
-    color: #2e3e56;
+    color: white;
     margin: 15px 32px 0;
     font-size: 20px;
     cursor: pointer;
@@ -60,13 +70,13 @@
   }
   .text-lk {
     font-size: 16px;
-    color: #2e3e56;
+    color: #fff;
     opacity: 0.5;
     margin-right: 6px;
   }
   .link-lk {
     text-decoration: none;
-    color: #2e3e56;
+    color: white;
     font-size: 16px;
     cursor: pointer;
   }
@@ -76,18 +86,18 @@
     margin-left: 8px;
   }
   :global(.active) {
-    border-bottom: 2px solid #0056d6;
+    border-bottom: 2px solid white;
     opacity: 1 !important;
   }
 </style>
 
-<div class="h-100 w-100">
-  <div class="container-white w-100">
+<div class="h-100 w-100 header-container">
+  <div class="container w-100">
     <div class="row">
       <div class="header-left">
         <div class="logo">
           <Link to="." {getProps}>
-            <LogoColored />
+            <Logo />
           </Link>
         </div>
         <nav>
@@ -101,10 +111,20 @@
           <div class="text-lk">Войти в</div>
           <div class="link-lk">Личный кабинет</div>
           <div class="icon-lk">
-            <LoginWhiteHeader />
+            <Login />
           </div>
         </a>
       </div>
+    </div>
+  </div>
+  <div class="sub-header w-100">
+    <div>
+      <AstralPlatform />
+    </div>
+    <div>
+      {#each news as { date, text }, i}
+        <NewItem {date} {text} />
+      {/each}
     </div>
   </div>
 </div>

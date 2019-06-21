@@ -1,11 +1,13 @@
 <script>
-  import Button from "../Button.svelte";
+  import Button from "components/Common/Buttons/Button.svelte";
+
   let FIO = "",
     organization = "",
     email = "",
     phone = "",
     inn = "",
     kpp = "";
+
   const submit = () => {
     console.log(
       "FIO",
@@ -50,13 +52,13 @@
     box-shadow: 0 0 0 0 transparent;
     border-radius: 6px;
     height: 50px;
-    outline:none;
-    transition: box-shadow .2s, border .2s;
+    outline: none;
+    transition: box-shadow 0.2s, border 0.2s;
     padding: 14px 20px;
   }
   .input:focus {
-    box-shadow: 0 0 0 1px #0056D6;
-    border-color: #0056D6;
+    box-shadow: 0 0 0 1px #0056d6;
+    border-color: #0056d6;
   }
   .fio-input {
     width: 596px;
@@ -115,7 +117,12 @@
     </div>
     <div class="personal-data">
       Отправляя заявку Вы соглашаетесь на
-      <a class="link" href="https://astral.ru/soglashenie-na-obrabotku-personalnykh-dannykh/">обработку персональных данных</a>
+      <a
+        class="link"
+        target="_blank"
+        href="https://astral.ru/soglashenie-na-obrabotku-personalnykh-dannykh/">
+        обработку персональных данных
+      </a>
     </div>
   </div>
 </div>

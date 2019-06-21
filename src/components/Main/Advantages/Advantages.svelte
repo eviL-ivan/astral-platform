@@ -1,6 +1,7 @@
 <script>
   import AdvantagesCard from "./AdvantagesCard.svelte";
-  import { image1, image2, image3, image4 } from "../../../static/AdvantagesIcon";
+  import { image1, image2, image3, image4 } from "static/AdvantagesIcon";
+  //mock
   let advantagesData = [
     {
       Icon: image1,

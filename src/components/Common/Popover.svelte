@@ -1,14 +1,19 @@
 <script>
+  import { onMount } from "svelte";
+
   let isOpen = false;
+
+  onMount(() => {
+    document.addEventListener("mousedown", function(e) {
+      if (e.target.closest(".popover_wrapper") === null) {
+        isOpen = false;
+      }
+    });
+  });
+
   let showPopover = () => {
     isOpen = !isOpen;
   };
-  document.addEventListener("mousedown", function(e) {
-    console.log(e.target.closest(".popover_wrapper")=== null);
-    if (e.target.closest(".popover_wrapper") === null) {
-      isOpen = false;
-    }
-  });
 </script>
 
 <style>

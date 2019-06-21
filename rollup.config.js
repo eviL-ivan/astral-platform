@@ -30,8 +30,9 @@ export default {
     }),
     svg(),
     alias({
-      resolve: ['.svelte', '.js'],
-      components: path.resolve(__dirname, "src/components")
+      resolve: [".svelte", ".js",'/index.js'],
+      components: path.resolve(__dirname, "src/components"),
+      static: path.resolve(__dirname, "static")
     }),
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In

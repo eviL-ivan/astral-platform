@@ -1,15 +1,13 @@
 <script>
-  import PantherCard from "./PantherCard.svelte";
   import { onMount } from "svelte";
-  import MultiCarousel from "../MultiCarousel.svelte";
-  import {
-    Action,
-    MoeDelo,
-    Promsvyazbank,
-    Tincoff
-  } from "../../../static/PanthersIcon";
-  import ArrowLeft from "../../../static/ArrowLeft.svelte";
-  import ArrowRight from "../../../static/ArrowRight.svelte";
+
+  import PantherCard from "./PantherCard.svelte";
+  import MultiCarousel from "components/Common/MultiCarousel.svelte";
+
+  import { Action, MoeDelo, Promsvyazbank, Tincoff } from "static/PanthersIcon";
+  import ArrowLeft from "static/ArrowIcon/ArrowLeft.svelte";
+  import ArrowRight from "static/ArrowIcon/ArrowRight.svelte";
+  //mock
   let pantherData = [
     {
       Icon: Action
@@ -24,7 +22,9 @@
       Icon: Tincoff
     }
   ];
+
   let carousel;
+
   onMount(() => {
     const container = document.getElementById("MyCarousel");
     carousel = new MultiCarousel({
@@ -38,9 +38,11 @@
       }
     });
   });
+
   const slideToLeft = () => {
     carousel && carousel.previous();
   };
+
   const slideToRight = () => {
     carousel && carousel.next();
   };

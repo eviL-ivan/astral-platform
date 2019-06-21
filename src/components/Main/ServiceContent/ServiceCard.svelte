@@ -1,9 +1,11 @@
 <script>
   import { navigate } from "svelte-routing";
+
   export let text;
   export let Icon;
+
   let goToSelectService = () => {
-    navigate("/content", { replace: false });
+    navigate("/content");
   };
 </script>
 

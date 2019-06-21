@@ -1,10 +1,10 @@
 <script>
   import Header from "components/Header.svelte";
-  import Main from "components/Main.svelte";
-  import About from "components/About.svelte";
-  import Contacts from "components/Contacts.svelte";
-  import News from "components/News.svelte";
-  import Content from "components/Content.svelte";
+  import Main from "components/Pages/Main.svelte";
+  import About from "components/Pages/About.svelte";
+  import Contacts from "components/Pages/Contacts.svelte";
+  import News from "components/Pages/News.svelte";
+  import Content from "components/Pages/Content.svelte";
   import Footer from "components/Footer.svelte";
   import { Router, Route } from "svelte-routing";
 
@@ -16,7 +16,7 @@
     position: relative;
     min-height: 100%;
   }
-  .content{
+  .content {
     padding-bottom: 205px;
   }
 </style>

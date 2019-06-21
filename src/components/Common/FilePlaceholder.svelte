@@ -1,5 +1,7 @@
 <script>
-  import PlaceholderImage from "../../static/PlaceholderImage.svelte";
+  export let placeholderTitle;
+  export let placeholderText;
+  export let PlaceholderImage;
 </script>
 
 <style>
@@ -26,7 +28,7 @@
   }
   .placeholder-text {
     width: 50%;
-    font-weight: 16px;
+    font-size: 16px;
     word-break: break-word;
     text-align: center;
   }
@@ -37,9 +39,11 @@
     <div class="placeholder-image">
       <PlaceholderImage />
     </div>
-    <div class="placeholder-title">Контента нет</div>
-    <div class="placeholder-text">
-      Пока нет контента, но скоро он обязательно появится :)
-    </div>
+    {#if placeholderTitle}
+      <div class="placeholder-title">{placeholderTitle}</div>
+    {/if}
+    {#if placeholderText}
+      <div class="placeholder-text">{placeholderText}</div>
+    {/if}
   </div>
 </div>

@@ -6,7 +6,8 @@
     ServiceIconSmall3,
     ServiceIconSmall4,
     ServiceIconSmall5
-  } from "../../../static/ServiceIcon";
+  } from "static/ServiceIcon";
+  //mock data
   let service = [
     {
       Icon: ServiceIconSmall1,

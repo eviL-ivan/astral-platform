@@ -1,5 +1,5 @@
 <script>
-  import AboutIcon from "../../static/AboutIcon.svelte";
+  import AboutIcon from "static/AboutIcon.svelte";
 </script>
 
 <style>
@@ -16,44 +16,44 @@
     align-items: center;
     margin-bottom: 96px;
   }
-  .left-top-info{
+  .left-top-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  .about-icon{
+  .about-icon {
     width: 186px;
     height: 149px;
     margin-bottom: 50px;
   }
-  .left-info{
+  .left-info {
     text-align: center;
     font-size: 16px;
   }
-  .right-top-info{
+  .right-top-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin-left: 103px;
   }
-  .right-title{
+  .right-title {
     font-size: 44px;
     font-weight: 500;
   }
-  .right-info{
+  .right-info {
     font-size: 18px;
   }
-  .bottom-container{
+  .bottom-container {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 22px;
     background: #0056d6 url("/AboutBackground.svg") center no-repeat;
   }
-  .bottom-info{
+  .bottom-info {
     color: #fff;
     font-size: 24px;
     font-weight: 300;

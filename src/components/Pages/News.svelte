@@ -1,5 +1,6 @@
 <script>
-  import NewsPageCard from "./NewsPageCard.svelte";
+  import NewsPageCard from "components/News/NewsPageCard.svelte";
+
   const news = [
     {
       date: "29.12.2018",
@@ -15,12 +16,7 @@
   ];
 </script>
 
-<style>
-  .container {
-  }
-</style>
-
-<div class="container w-100 max-width" >
+<div class="w-100 max-width">
   {#each news as { ...data }, i}
     <NewsPageCard {...data} />
   {/each}

@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import FilePlaceholder from "./FilePlaceholder.svelte";
+
   onMount(() => {
     const reel = document.getElementById("reel");
     const tab1 = document.getElementById("tab1");
@@ -70,7 +70,9 @@
 <div class="tab_wrapper">
   <header>
     <nav>
-      <div on:click={slideLeft} id="tab1" class="tab tab1 activeTab">Описание</div>
+      <div on:click={slideLeft} id="tab1" class="tab tab1 activeTab">
+        Описание
+      </div>
       <div class="tab tab2" on:click={slideRight} id="tab2">
         Спецификация API
       </div>

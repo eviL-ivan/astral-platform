@@ -1,22 +1,23 @@
 <script>
   import ServiceCard from "./ServiceCard.svelte";
-  import Divider from "../Divider.svelte";
-  import WhiteButton from "../WhiteButton.svelte";
-  import ArrowUp from "../../../static/ArrowUp.svelte";
-  import ArrowDown from "../../../static/ArrowDown.svelte";
+  import Divider from "components/Common/Divider.svelte";
+  import WhiteButton from "components/Common/Buttons/WhiteButton.svelte";
+
+  import ArrowUp from "static/ArrowIcon/ArrowUp.svelte";
+  import ArrowDown from "static/ArrowIcon/ArrowDown.svelte";
   import {
     ServiceIcon1,
     ServiceIcon2,
     ServiceIcon3,
     ServiceIcon4,
     ServiceIcon5
-  } from "../../../static/ServiceIcon";
-  let isShowAllService = false;
+  } from "static/ServiceIcon";
 
+  let isShowAllService = false;
   const showAllService = () => {
     isShowAllService = !isShowAllService;
   };
-
+  //mock
   let mainService = [
     {
       Icon: ServiceIcon1,

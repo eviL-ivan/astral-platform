@@ -1,7 +1,7 @@
 <script>
-  import Divider from "./Divider.svelte";
-  import Logo from "../../static/Logo.svelte";
   import { Link } from "svelte-routing";
+  import Divider from "components/Common/Divider.svelte";
+  import Logo from "static/Logo.svelte";
 </script>
 
 <style>
@@ -113,7 +113,7 @@
     </div>
   </div>
   <div class="divider">
-    <Divider classes="white"/>
+    <Divider classes="white-divider" />
   </div>
   <div class="footer-container">
     <div class="logo-icon">

@@ -21,6 +21,7 @@
     "start": "sirv public",
     "start:dev": "sirv public --dev"
   },
+  "homepage": "https://cryzer12.github.io/astral-platform/",
   "dependencies": {
     "multicarousel": "^3.0.1",
     "path": "^0.12.7",

@@ -113,7 +113,7 @@
     </div>
   </div>
   <div class="divider">
-    <Divider />
+    <Divider classes="white"/>
   </div>
   <div class="footer-container">
     <div class="logo-icon">

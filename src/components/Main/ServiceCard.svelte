@@ -1,7 +1,10 @@
 <script>
-  import { Link } from "svelte-routing";
+  import { navigate } from "svelte-routing";
   export let text;
   export let Icon;
+  let goToSelectService = () => {
+    navigate("/content", { replace: false });
+  };
 </script>
 
 <style>
@@ -29,11 +32,9 @@
   }
 </style>
 
-<Link to="content">
-  <div class="service-card-wrapper">
-    <div class="service-icon">
-      <Icon />
-    </div>
-    <div class="service-text">{text}</div>
+<div class="service-card-wrapper" on:click={goToSelectService}>
+  <div class="service-icon">
+    <Icon />
   </div>
-</Link>
+  <div class="service-text">{text}</div>
+</div>

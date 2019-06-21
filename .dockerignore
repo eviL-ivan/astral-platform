@@ -1,0 +1,9 @@
+.history
+node_modules
+lerna-debug.log
+.idea
+.vscode
+.next
+lerna.json
+package-lock.json
+yarn.lock
